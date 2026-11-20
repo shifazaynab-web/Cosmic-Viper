@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e6fd9" />
+  <title>QR Studio — Professional QR Code Platform</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main id="main" class="main">
+      <header id="topbar" class="topbar"></header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+  <div id="modal-root" class="modal-root"></div>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.js"></script>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+  <!-- App modules -->
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/qr-generator.js"></script>
+  <script src="js/qr-customizer.js"></script>
+                <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

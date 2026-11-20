@@ -1,0 +1,24 @@
+/* components.css */
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.tab { padding: 8px 14px; color: var(--text-muted); border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 600; }
+.pill { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); font-size: 12px; }
+.kv { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 13px; }
+.kv .k { color: var(--text-muted); }
+.stat-card { text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--primary); }
+.stat-card .lbl { font-size: 12px; color: var(--text-muted); }
+.table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table th, .table td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+.table th { background: var(--surface-2); font-weight: 600; }
+.dropzone { border: 2px dashed var(--border); border-radius: var(--radius); padding: 40px; text-align: center; color: var(--text-muted); transition: border-color .15s, background .15s; }
+.dropzone.drag { border-color: var(--primary); background: var(--primary-light); }
+.spinner { width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin .8s linear infinite; display: inline-block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.progress { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.progress-bar { height: 100%; background: var(--primary); transition: width .2s; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.template-card { cursor: pointer; transition: transform .15s, box-shadow .15s; }
+.template-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.lib-item { display: flex; gap: 12px; align-items: center; padding: 10px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 8px; background: var(--surface); }
+.lib-item img { width: 60px; height: 60px; object-fit: contain; border-radius: 4px; background: var(--surface-2); }
